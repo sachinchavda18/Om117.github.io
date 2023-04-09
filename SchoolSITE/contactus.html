@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridpura Primary School</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/e651c43b1c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- header starts -->
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo image"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="staff.html" target="_blank">STAFF</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <H1>Contact Us</H1>
+    </section>
+    <!-- header Ends -->
+
+    <!-- Contact Us starts -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d496.7131851739004!2d72.48359763444039!3d22.807610382907292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1681049422201!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Ridpura Primary School</h5>
+                        <p>Dholka,Ahmedabad-382220</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone "></i>
+                    <span>
+                        <h5>+91 9999999999</h5>
+                        <p>Monday to Friday::10:30AM to 05:15PM</p>
+                        <p>Saturday:: 07:00AM to 12:00PM</p>
+                        <p>Sunday Closed</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>pricipal@ridpura.gmail.com</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email"  placeholder="Enter Your Email" required>
+                    <input type="text" name="subject"  placeholder="Subject" required>
+                    <textarea  rows="8" name="message" placeholder="Enter your Query"></textarea>
+                    <button type="submit" class="hero-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us ends -->
+
+
+
+
+    <!-- footer starts -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repellendus blanditiis quis maiores autem
+            obcaecati consectetur accusantium cum nemo, reprehenderit, minima laudantium eum quod dolore nisi.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Designed By <i class="fa fa-heart-o"></i> OM JADAV</p>
+    </section>
+    <!-- footer Ends -->
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
