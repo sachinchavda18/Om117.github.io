@@ -396,3 +396,39 @@ h3{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+
+
+
+/* --------------------Other photos pages-------------------  */
+
+.other-photos{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.other-photos-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+.other-photos-col img{
+    width: 100%;
+    display: block;
+    /* row-gap: 2cm; */
+}
+.other-row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+
+}
+@media(max-width:700px){
+    .other-row{
+        flex-direction: column;
+    }
+}
